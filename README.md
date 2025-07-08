@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="demo/eej.gif" width="780"><br>
+  <img src="demo/vej.gif" width="780"><br>
   <em>Example Earth -> Venus -> Earth -> Jupiter candidate (ΔV ≈ 9 km s<sup>-1</sup>)</em>
 </p>
 
@@ -39,8 +39,8 @@ pip install -r requirements.txt
 # 1) generate a 5-yr ephemeris cache (≈ 3 s, 1.5 MB)
 python -m mga_opt precompute-ephemeris configs/veejga.yaml
 
-# 2) run the hybrid GA + NLP search (≈ 60 s on laptop)
-python -m mga_opt search configs/veejga.yaml
+# 2) run the hybrid GA + NLP search
+python -m mga_opt search configs/parameters.yaml
 
 # 3) play or export the best trajectory
 python -m mga_opt plot outputs/best_YYYYMMDD_HHMMSS.json     # interactive
