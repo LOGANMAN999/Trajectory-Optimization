@@ -1,0 +1,9 @@
+
+
+
+python -m mga_opt precompute-ephemeris configs/parameters.yaml
+
+
+python -m mga_opt search configs\parameters.yaml      
+
+python -m mga_opt plot outputs/best_20250701_011312.json   # example of plot command

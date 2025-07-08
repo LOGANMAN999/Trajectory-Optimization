@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mga-opt"                # package name on PyPI
+version = "0.1.0"
+description = "Multiple-gravity-assist trajectory optimiser"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.8"
+dependencies = [
+  "numpy",
+  "scipy",
+  "matplotlib",
+  "pandas",
+  "spiceypy",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}      # <─ src layout
+packages = ["mga_opt"]          # list or use "find" (see below)
+
+# optional: automatic discovery
+# [tool.setuptools.packages.find]
+# where = ["src"]
+
+[project.scripts]
+mga-opt = "mga_opt.cli:main"    # so you can run `mga-opt search …`

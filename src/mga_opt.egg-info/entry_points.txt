@@ -1,0 +1,2 @@
+[console_scripts]
+mga-opt = mga_opt.cli:main

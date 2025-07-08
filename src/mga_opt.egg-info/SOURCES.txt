@@ -1,0 +1,17 @@
+README.md
+pyproject.toml
+src/mga_opt/__init__.py
+src/mga_opt/__main__.py
+src/mga_opt/cli.py
+src/mga_opt/constants.py
+src/mga_opt/cost.py
+src/mga_opt/dynamics.py
+src/mga_opt/ephemeris.py
+src/mga_opt/optimization.py
+src/mga_opt/plotting.py
+src/mga_opt.egg-info/PKG-INFO
+src/mga_opt.egg-info/SOURCES.txt
+src/mga_opt.egg-info/dependency_links.txt
+src/mga_opt.egg-info/entry_points.txt
+src/mga_opt.egg-info/requires.txt
+src/mga_opt.egg-info/top_level.txt
