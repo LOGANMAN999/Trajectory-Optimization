@@ -24,11 +24,11 @@ published by **Wagner & Wie, JGCD 2015** and extends it with:
 * 🔧 All hyper-parameters, planet catalogues & bounds in a single YAML
   file (`configs/…`).
 
-> **No proprietary tools** – everything is pure Python, ~800 LOC.
+
 
 ---
 
-## 1 · Quick start 🚀
+Quick start 🚀
 
 ```bash
 git clone https://github.com/<you>/trajectory-optimization.git
@@ -37,13 +37,13 @@ python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 
 # 1) generate a 5-yr ephemeris cache (≈ 3 s, 1.5 MB)
-python -m mga_opt precompute-ephemeris configs/veejga.yaml
+python -m mga_opt precompute-ephemeris configs/parameters.yaml
 
 # 2) run the hybrid GA + NLP search
 python -m mga_opt search configs/parameters.yaml
 
 # 3) play or export the best trajectory
-python -m mga_opt plot outputs/best_YYYYMMDD_HHMMSS.json     # interactive
+python -m mga_opt plot outputs/best_YYYYMMDD_HHMMSS.json     
 python - <<'PY'
 from mga_opt.plotting import animate
 animate("outputs/best_*.json", save_gif="demo/eej.gif")
