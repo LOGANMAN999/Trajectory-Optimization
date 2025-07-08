@@ -1,1 +1,1 @@
-<img src="demo/vej.gif" width="480">
+<img src="demo/vej.gif" width="780">
