@@ -9,7 +9,6 @@
 _A compact, reproducible implementation of Wagner & Wie (2015)_
 
 [![](https://img.shields.io/badge/Python-3.10+-blue?logo=python)](#)
-[![](https://img.shields.io/badge/License-MIT-green)](#)
 [![](https://img.shields.io/badge/poliastro-2025.x-purple?logo=pip)](#)
 
 This repository re-creates the **“Hybrid Algorithm for Multiple
